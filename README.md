@@ -15,7 +15,7 @@
 - Linux environment (recommended)
 - `readline` library for client-side command-line interface
 
-## Compilation on your System
+## Compilation in a Linux/UNIX System
 To compile and run the server and client, follow these steps:
 
 1. Clone the repository:
