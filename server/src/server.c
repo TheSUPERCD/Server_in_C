@@ -13,12 +13,12 @@
 #include"include/matinverse.h"
 #include"include/kmeans.h"
 
+#define RED "\033[1;31m"
 #define GREEN "\033[1;32m"
 #define BLUE "\033[1;34m"
-#define NORMAL "\033[0m"
-#define RED "\033[1;31m"
 #define CYAN "\033[1;36m"
 #define MAGENTA "\033[1;35m"
+#define NORMAL "\033[0m"
 
 #define ERROR(err_str) fprintf(stderr, RED"\nERROR: %s\n"NORMAL, err_str);
 #define WARNING(warn_str) fprintf(stderr, MAGENTA"\nERROR: %s\n"NORMAL, warn_str);
@@ -28,7 +28,7 @@
 #define MAX_COMMAND_LENGTH 512
 #define INTER_DIR "intermediate_files/"
 
-// server settings
+// default server settings
 int server_port = -1;
 int daemon_enabled = 0;
 char *strategy_in_use;
