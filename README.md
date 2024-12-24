@@ -20,17 +20,17 @@ To compile and run the server and client, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/TheSUPERCD/Server_in_C.git
+   $ git clone https://github.com/TheSUPERCD/Server_in_C.git
    ```
 
 2. Navigate to the project directory:
    ```sh
-   cd Server_in_C
+   $ cd Server_in_C
    ```
 
 3. Compile the server and client using `make`:
    ```sh
-   make
+   $ make
    ```
 
 ## Usage
@@ -38,25 +38,25 @@ To compile and run the server and client, follow these steps:
 ### Starting the Server
 To start the server, run the following command:
 ```sh
-./server -p <port>
+$ ./server -p <port>
 ```
 Replace `<port>` with the port number you want the server to listen on.
 
 Example:
 ```sh
-./server -p 8080
+$ ./server -p 8080
 ```
 
 ### Connecting with the Client
 To start the client and connect to the server, run the following command:
 ```sh
-./client -ip <server_ip> -p <server_port>
+$ ./client -ip <server_ip> -p <server_port>
 ```
 Replace `<server_ip>` with the server's IP address and `<server_port>` with the port number the server is listening on.
 
 Example:
 ```sh
-./client -ip 127.0.0.1 -p 8080
+$ ./client -ip 127.0.0.1 -p 8080
 ```
 
 ### Client Interaction
@@ -70,11 +70,11 @@ The server processes the following commands:
 
   Usage:
   ```sh
-  matinvpar -n <matrix_size> -I <init_type> -P <print_switch> -m <max_randnum>
+  $ matinvpar -n <matrix_size> -I <init_type> -P <print_switch> -m <max_randnum>
   ```
   Example:
   ```sh
-  matinvpar -n 4 -I fast -P 1 -m 10
+  $ matinvpar -n 4 -I fast -P 1 -m 10
   ```
 
 - **K-Means Clustering (`kmeanspar`):**
@@ -82,11 +82,11 @@ The server processes the following commands:
 
   Usage:
   ```sh
-  kmeanspar -f <file_path> -k <num_clusters>
+  $ kmeanspar -f <file_path> -k <num_clusters>
   ```
   Example:
   ```sh
-  kmeanspar -f ./data/kmeans-data.txt -k 3
+  $ kmeanspar -f ./data/kmeans-data.txt -k 3
   ```
   The client will then send the data file to the server.
 
@@ -95,7 +95,7 @@ The server processes the following commands:
 
   Usage:
   ```sh
-  shutdown
+  $ shutdown
   ```
 
 ### Server Options
@@ -106,7 +106,7 @@ The server processes the following commands:
 
 Example:
 ```sh
-./server -p 8080 -s fork
+$ ./server -p 8080 -s fork
 ```
 
 ### Client Options
@@ -116,7 +116,7 @@ Example:
 
 Example:
 ```sh
-./client -ip 127.0.0.1 -p 8080
+$ ./client -ip 127.0.0.1 -p 8080
 ```
 
 ## Acknowledgments
